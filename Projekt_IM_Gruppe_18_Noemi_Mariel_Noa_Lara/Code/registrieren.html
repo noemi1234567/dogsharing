@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrieren</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="flex registrierencss">
+        <h1>Registrieren</h1>
+
+        <div class="container-header container-body">
+            <label>Benutzername</label><br>
+            <input type="text" id="benutzername"><br>
+        
+            <label>E-Mail Adresse</label><br>
+            <input type="email" id="email"><br>
+        
+            <label>Passwort</label><br>
+            <input type="password" id="password"><br><br>
+        
+            <button onclick="registrieren()">Registrieren</button><br><br>
+            <button onclick="window.location='login.html'">Bereits registriert? <br> Hier einloggen</button>
+        </div>
+    </header>
+
+    <div id="nachricht"></div>
+
+    <script src="js/registrieren.js"></script>
+
+</body>
+
+</html>

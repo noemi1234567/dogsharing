@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Pateninserat</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="flex felxheader">
+
+        <div class="container-header container-menu">
+            <h2>Mein Pateninserat</h2>
+        </div>
+
+
+        <nav class="container-header container-nav">
+            <button id="neuerPate" onclick="window.location='../'">Alle Inserate</button>
+            <button id="logout" onclick="logout()">Logout</button>
+        </nav>
+
+    </header>
+
+    <p id="infoText"> </p>
+
+    <div id="meineAnzeige">
+
+        <label>Name</label><br>
+        <input id="name" type="text" value=""><br><br>
+
+        <label>Geburtstag</label><br>
+        <input id="geburtstag" type="text" value=""><br><br>
+
+        <label>Beruf</label><br>
+        <input id="beruf" type="text" value=""><br><br>
+
+        <label>Wohnort</label><br>
+        <input id="wohnort" type="text" value=""><br><br>
+
+        <label>Bevorzugte Hunderasse</label><br>
+        <input id="praeferenz_rasse" type="text" value=""><br><br>
+        
+        <label>Bevorzugtes Hundealter</label><br>
+        <input id="praeferenz_alter" type="text" value=""><br><br>
+
+        <label for="bild">Bild URL</label><br>
+        <input id="bild" type="text" value=""><br><br>
+        <img id="bild-vorschau" width="300px" src="" alt="Portaitbild"><br><br>
+
+        <label for="beschreibung">Über mich</label><br>
+        <textarea id="beschreibung" name="beschreibung"></textarea><br><br>
+
+        <label>Erfahrung mit Hunden</label><br>
+        <select class="dropdown" name="erfahrung" id="erfahrung">
+            <option value="2">Ja</option>
+            <option value="1">Nein</option>
+        </select><br><br>
+
+        <label for="wochentage">Verfügbare Wochentage</label><br>
+
+        <div id="wochentage" class="flex flexwochentage"></div>
+
+        <button class="hidden" id="button-neue" onclick="neuerPate()">Veröffentlichen</button>
+        <button class="hidden" id="button-aktualisieren" onclick="aktualisierePate()">Aktualisieren</button>
+        <button class="hidden" id="button-loeschen" onclick="loeschePate()">Löschen</button>
+
+        <p id="nachricht"></p>
+
+    </div>
+
+    <script src="js/pate.js"></script>
+    <script src="js/logout.js"></script>
+
+</body>
+
+</html>
